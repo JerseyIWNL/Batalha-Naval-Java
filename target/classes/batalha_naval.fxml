@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns:fx="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BatalhaNavalController">
+    <children>
+        <HBox alignment="CENTER" spacing="10" padding="10">
+            <children>
+                <Label text="Endereço do servidor: " />
+                <TextField fx:id="endereco" promptText="Endereço do servidor"/>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="10" padding="10">
+            <children>
+                <Label text="Posição: " />
+                <TextField fx:id="posicao" promptText="Posição"/>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" spacing="10" padding="10">
+            <children>
+                <Button text="Conectar" onAction="#conectar"/>
+                <Button text="Aguardar jogador" onAction="#aguardarJogador"/>
+                <Button text="Jogar" onAction="#jogar"/>
+            </children>
+        </HBox>
+        <GridPane gridLinesVisible="true">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+            <columnConstraints>
+                <!-- Add column constraints here -->
+            </columnConstraints>
+            <rowConstraints>
+                <!-- Add row constraints here -->
+            </rowConstraints>
+        </GridPane>
+    </children>
+</VBox>
